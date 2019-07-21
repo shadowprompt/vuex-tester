@@ -1,0 +1,19 @@
+{
+  "name": "vuextester",
+  "version": "1.0.0",
+  "description": "fully test your vuex store",
+  "main": "src/vuex-tester.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadowprompt/vuex-tester.git"
+  },
+  "author": "Shadow Prompt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shadowprompt/vuex-tester/issues"
+  },
+  "homepage": "https://github.com/shadowprompt/vuex-tester#readme"
+}

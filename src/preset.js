@@ -1,5 +1,5 @@
-import storeModules from '../../store/modules';
-import VuexTester from './VuexTester';
+import storeModules from './modules';
+import VuexTester from './vuex-tester';
 const project = process.env.project;
 
 
