@@ -1,10 +1,12 @@
 {
-  "name": "vuextester",
+  "name": "vuex-tester",
   "version": "1.0.0",
-  "description": "fully test your vuex store",
+  "description": "fully test your vuex store, mock the vuex environment to run your commit and dispatch without any extra adjustment.",
   "main": "src/vuex-tester.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start",
+    "esw": "esw src/* -w",
+    "babel": "babel -d lib/ src/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,28 @@
   "bugs": {
     "url": "https://github.com/shadowprompt/vuex-tester/issues"
   },
-  "homepage": "https://github.com/shadowprompt/vuex-tester#readme"
+  "homepage": "https://github.com/shadowprompt/vuex-tester#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-istanbul": "^5.2.0",
+    "babel-preset-env": "^1.7.0",
+    "karma-chrome-launcher": "^3.0.0",
+    "webpack": "^4.36.1"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "core-js": "^2.6.9",
+    "karma": "^4.2.0",
+    "karma-cli": "^2.0.0",
+    "karma-coverage": "^1.1.2",
+    "karma-mocha": "^1.3.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.32",
+    "karma-webpack": "^4.0.2",
+    "mocha": "^6.2.0"
+  }
 }

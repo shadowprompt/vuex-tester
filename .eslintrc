@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "generator-star-spacing": "off",
+    "space-before-function-paren": ["error", "never"],
+    "semi": ["error", "always"],
+    "no-debugger": "off",
+    "indent": ["error", 2],
+    "eqeqeq": "off"
+  }
+}
