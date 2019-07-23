@@ -105,9 +105,7 @@ export default class VuexTester {
     });
   }
 
-  update(storeContext, namespace) {
-    storeContext = storeContext || this.store;
-    namespace = namespace || this.namespace;
+  update(storeContext = this.store, namespace = this.namespace) {
     const fn = this.getFn(namespace);
     const {
       state = {},
@@ -154,7 +152,7 @@ export default class VuexTester {
   getFn(namespace) {
     const prefix = namespace ? `${namespace}/` : "";
     // the actions/mutations in current using module are not in this masterSource unexpectedly, so use the slaveSource
-    return function(type, masterSource, slaveSource) {
+    return (type, masterSource, slaveSource) => {
       let fnName;
       if (type in masterSource) {
         fnName = masterSource[type];
@@ -194,7 +192,7 @@ export default class VuexTester {
       rootStateMap
     );
   }
-
+  // sometimes you may need to do something to the rootState
   use(middleWare) {
     this.rootStateMiddlewares.push(middleWare);
     this.updateState();

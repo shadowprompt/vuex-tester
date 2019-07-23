@@ -11,7 +11,7 @@ import VuexTester from 'vuex-tester';
 
 import store from './tests/store';
 
-const { state, commit, dispatch } = new VuexTester(store).update(); // current subModules path
+const { state, commit, dispatch } = new VuexTester(store).update();
 
 describe("test state", async () => {
   it("state abc", async function() {

@@ -1,8 +1,8 @@
 {
   "name": "vuex-tester",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "fully test your vuex store, mock the vuex environment to run your commit and dispatch without any extra adjustment.",
-  "main": "src/vuex-tester.js",
+  "main": "lib/vuex-tester.js",
   "scripts": {
     "test": "karma start",
     "esw": "esw src/* -w",
@@ -40,5 +40,6 @@
     "karma-spec-reporter": "0.0.32",
     "karma-webpack": "^4.0.2",
     "mocha": "^6.2.0"
-  }
+  },
+  "keywords": ["vuex", "store", "test", "unit-test", "mock", "simulator", "dispatch", "commit", "action", "mutation", "state", "getter", "rootState", "rootGetter"]
 }
