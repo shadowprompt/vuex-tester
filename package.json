@@ -1,6 +1,6 @@
 {
   "name": "vuex-tester",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "fully test your vuex store, mock the vuex environment to run your commit and dispatch without any extra adjustment.",
   "main": "lib/vuex-tester.js",
   "scripts": {
